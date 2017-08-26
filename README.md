@@ -20,25 +20,29 @@ Things you may want to cover:
   rake db:seed
 
 * Database migration
-  $ heroku run --app samso rake db:migrate
-  $ heroku logs --tail --app samso
+  $ heroku run --app jacob-1337 rake db:migrate
+  $ heroku logs --tail --app jacob-1337
 
 * Tasks
-  $ heroku run --app samso rake page:build_subscription_pages
-  $ heroku run --app samso rake page:build_front_pages
-  $ heroku run --app samso rake page:build_post_pages
+  $ heroku run --app jacob-1337 rake system_setup:build_defaults
+  $ heroku run --app jacob-1337 rake page:build_subscription_pages
+  $ heroku run --app jacob-1337 rake page:build_welcome_pages
+  $ heroku run --app jacob-1337 rake page:build_front_pages
+  $ heroku run --app jacob-1337 rake page:build_post_pages
 
 * How to run the test suite
   $ rake
 
 * Services (job queues, cache servers, search engines, etc.)
-  $ heroku logs --tail --app samso
+  $ heroku logs --tail --app jacob-1337
 
 * Deployment instructions
   $ git push origin master
 
 * console on production
-  $ heroku run rails console --app samso
+  $ heroku run rails console --app jacob-1337
+
+
 
 * Huray ported
 
